@@ -1,0 +1,90 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(1deg, #E5D5B8, #D0B8A8, #F7F1E1);
+
+    
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    text-align: center;   
+  }
+ 
+
+  .welcome-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+     background: linear-gradient(to right, #EB5B00, #7A4B3B);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2px;
+    animation: bounceIn 1.5s ease-out; 
+  }
+  
+  
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(30px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .welcome-subtext {
+    font-size: 20px;
+    color: #333; 
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1.5s forwards; 
+  }
+  
+ 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .welcome-text {
+      font-size: 2.5rem; 
+    }
+  
+    .welcome-subtext {
+      font-size: 1rem;  
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcome-text {
+      font-size: 2rem; 
+    }
+  
+    .welcome-subtext {
+      font-size: 0.9rem; 
+    }
+  
+    .welcome-container {
+      padding: 10px; 
+    }
+  }
+  
