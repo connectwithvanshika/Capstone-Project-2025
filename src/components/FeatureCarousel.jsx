@@ -40,6 +40,7 @@ const features = [
 ];
 
 const FeatureCarousel = () => {
+  // sdfsadfsdf
   return (
     <div className="carousel-section">
       <h2 className="carousel-title">Featured Wellness Picks</h2>
