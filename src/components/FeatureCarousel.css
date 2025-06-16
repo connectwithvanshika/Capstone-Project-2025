@@ -19,17 +19,17 @@
   }
   
   .carousel-container::-webkit-scrollbar {
-    height: 8px;
+    height: 5px;
   }
-  
+ 
   .carousel-container::-webkit-scrollbar-thumb {
     background-color:#A7633A;
-    border-radius: 10px;
+    border-radius: 6px;
   }
   
    .carousel-card {
     min-width: 250px;
-    min-height: 450px; 
+    min-height: 500px; 
     background-color: #fffdf6;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(122, 75, 59, 0.2); 
@@ -66,7 +66,7 @@
     margin-top: 10px;
     display: inline-block;
     padding: 8px 14px;
-    background-color: #EB5B00;
+    background-color:#EB5B00;
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -75,6 +75,6 @@
   }
   
   .cta-btn:hover {
-    background-color: #A7633A;
+    background-color: #A7633A ;
   }
   

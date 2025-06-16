@@ -1,27 +1,103 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ onNavigate }) => {
   return (
     <footer>
-      <div className="quick-links">
-        <a href="#">About Us</a>  |  
-        <a href="#"> Services</a>  | 
-        <a href="#"> Privacy Policy</a>  |
-        <a href="#"> Terms and Service</a>
+      <div className="footer-grid">
+        {/* Column 1 - Quick Links */}
+        <div className="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate("about");
+                }}
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate("services");
+                }}
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1_sRtbaJxML9zk53GOzal9r5GcMf0avVfVTgbdvhw5d4/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1JKSJJuWyN3JtnmUrDcwzCbiIKKU11J3-srHGfBS3oD8/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Terms of Service
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 2 - Contact Info */}
+        <div className="footer-column">
+          <h4>Contact Us</h4>
+          <p>Email: support@calmsphere.com</p>
+          <p>Phone: +91 98765 43210</p>
+        </div>
+
+        {/* Column 3 - Social Icons */}
+        <div className="footer-column">
+          <h4>Follow Us</h4>
+          <div className="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="contact-info">
-        <p>Contact us at : calmsphere@google.com</p>
-        <p>Phone: 123-456-7890</p>
+
+      <div className="copyright">
+        © {new Date().getFullYear()} CalmSphere. All rights reserved.
       </div>
-      <div className="social-links">
-        <a href="#"><FaFacebook /></a>
-        <a href="#"><FaTwitter /></a>
-        <a href="#"><FaLinkedin /></a>
-        <a href="#"><FaInstagram /></a>
-      </div>
-      <p>&copy; 2025 CalmSphere.</p>
     </footer>
   );
 };

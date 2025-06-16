@@ -1,5 +1,6 @@
 import React from 'react';
 import './WelcomeMessage.css';
+import backgroundImage from '../assets/anime.jpg'; // Adjust the path as necessary
 
 export default function WelcomeMessage() {
   return (

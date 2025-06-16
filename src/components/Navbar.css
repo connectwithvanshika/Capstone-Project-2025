@@ -1,55 +1,58 @@
 
 .navbar {
-    background: linear-gradient(90deg, #FFFDF6, #FAF6E9);
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #7A4B3B;
-    box-shadow: 0 4px 25px rgba(122, 75, 59, 0.4), 0 10px 20px rgba(122, 75, 59, 0.2);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   
-  
-  .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #EB5B00;
+  position: fixed; /* Keeps navbar at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Makes sure it stays above other elements */
+}
 
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-links li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color:#7A4B3B;
-    transition: width 0.3s ease;
-  }
-  
-  .navbar-links li a:hover::after {
-    width: 100%;
-  }
-  
-  .navbar-links li a:hover {
-    color:#EB5B00;
-  }
-  
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active-link a {
+  color: #d35400;
+  font-weight: 700;
+  border-bottom: 2px solid #d35400;
+}
+
+.auth-buttons button {
+  margin-left: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d35400;
+  background: transparent;
+  color: #d35400;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  /* margin-left: 50px; */
+}
+
+
+.auth-buttons button:hover {
+  background-color: #d35400;
+  color: white;
+}

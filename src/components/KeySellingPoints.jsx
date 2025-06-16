@@ -1,7 +1,8 @@
 import React from "react";
 import "./KeySellingPoints.css"; 
 import peace from '../assets/p.jpeg'
-import mentalhealth from '../assets/mentalhealth.jpeg'
+import aesthetic from '../assets/aesthetic.jpeg'
+
 
 const KeySellingPoints = () => {
   return (
@@ -35,7 +36,7 @@ const KeySellingPoints = () => {
         </div>
         <div className="image">
           <img
-          src={mentalhealth} alt="Personalized Features"
+          src={aesthetic} alt="Personalized Features"
           />
         </div>
       </div>
