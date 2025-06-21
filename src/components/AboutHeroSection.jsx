@@ -8,6 +8,7 @@ const AboutHeroSection = () => {
       <div className="hero-content">
         <h1>About Us</h1>
         <p>
+          {/* Welcome to Calmsphere, your personal sanctuary for mental wellness. */}
           Empowering you to nurture your mental wellness through intuitive mood tracking, mindful breathing, and daily motivation.
         </p>
       </div>
