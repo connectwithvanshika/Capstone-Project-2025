@@ -1,47 +1,50 @@
 import React from 'react';
 import './TeamCarousel.css';
-import vanshika from '../assets/vanshika.jpeg';
-import riya from '../assets/riya.jpeg';
-import vansh from '../assets/vanshd.jpg';
-import anushka from '../assets/anushka.jpeg';
+import vanshika from '../assets/vanshika2.jpeg';
+import team_m3 from '../assets/team_m3.jpg';
+import Reyansh from '../assets/Reyansh.jpeg';
+import team_m4 from '../assets/team_m4.jpeg';
+import team_m5 from '../assets/team_m5.jpg';
+import team_m6 from '../assets/team_m6.jpg';
+
 
 
 
 const teamMembers = [
   {
-    name: "Vanshika Yadav",
+    name: "Vanshika",
     role: "Founder & CEO",
     image: vanshika,
     bio: "Visionary leader with a passion for mental wellness and digital innovation.",
   },
   {
-    name: "Vansh Deshwal",
+    name: "Nirvaan",
     role: "Co-Founder & Designer",
-    image: vansh,
+    image: team_m3,
     bio: "Blends calm aesthetics with meaningful user experience.",
   },
   {
-    name: "Udit Jain",
+    name: "Reyansh",
     role: "Lead Developer",
-    image: "https://img.freepik.com/free-photo/portrait-confident-young-businessman-with-his-arms-crossed_23-2148176206.jpg?semt=ais_hybrid&w=740",
+    image: Reyansh,
     bio: "Code whisperer. Builds scalable, responsive, and beautiful digital tools.",
   },
   {
-    name: "Bhuvi Deshwal",
-    image: "https://png.pngtree.com/png-vector/20241019/ourmid/pngtree-future-innovator-linkedin-profile-of-a-21-year-old-indian-professional-png-image_14113480.png",
+    name: "Kiya",
+    image: team_m4,
     role: "Mental Health Advisor",
     bio: "Certified psychologist shaping calm-driven, science-backed content.",
   },
   {
-    name: "Riya Garg ",
-    image: riya,
+    name: "Nyra",
+    image: team_m5,
     role: "Marketing Head",
     bio: "Brings CalmSphere to the world through creativity and empathy.",
   },
   {
-    name: "Anushka Tyagi",
+    name: "Ziyana",
     role: "UI/UX Designer",
-    image: anushka,
+    image: team_m6,
     bio: "Crafts intuitive and aesthetic user journeys with a touch of calm.",
   },
 ];
